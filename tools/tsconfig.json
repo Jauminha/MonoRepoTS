@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "rootDir": "./",
+        "baseUrl": "../",
+        "module": "commonjs",
+        "target": "es2015",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "strictNullChecks": false,
+        "sourceMap": true,
+        "removeComments": true,
+        "downlevelIteration": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmitOnError": true,
+        "newLine": "lf",
+        "diagnostics": true,
+        "allowJs": true,
+        "typeRoots": [
+            "../node_modules/@types",
+            "./typings/@purtuga",
+        ]
+    },
+    "typeRoots": [
+        "../node_modules/@types",
+        "./typings/@purtuga",
+    ]
+}

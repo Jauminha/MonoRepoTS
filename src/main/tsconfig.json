@@ -1,0 +1,18 @@
+{
+    "extends": "../../tsconfig",
+    "compilerOptions": {
+        "rootDir": "./",
+        "baseUrl": "./",
+        "outDir": "../../dist/viewer",
+        "declaration": false,
+        "incremental": true
+    },
+    "references": [
+        {
+            "path": "../_common_"
+        }
+    ],
+    "include": [
+        "./scripts/**/*"
+    ]
+}
