@@ -1,4 +1,4 @@
-import { Component, element } from "../../../../../_common_/components/component";
+import { Component, element } from "../component";
 import { Variant } from "../variant/variant";
 
 export class Category implements Component {

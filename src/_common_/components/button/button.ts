@@ -1,4 +1,4 @@
-import { Component, element } from "../../../../../_common_/components/component";
+import { Component, element } from "../component";
 
 export enum ButtonTypes {
     name = "name",

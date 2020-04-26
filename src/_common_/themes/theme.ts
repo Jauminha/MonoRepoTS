@@ -1,4 +1,4 @@
-import { element } from "../../../../_common_/components/component";
+import { element } from "../components/component";
 
 export enum Themes {
     default = "default",
