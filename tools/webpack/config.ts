@@ -129,7 +129,7 @@ export const webpackConfig = (cfg: BaseConfig): webpack.Configuration => {
             filename: (chunkData) => {
                 switch (chunkData.chunk.name) {
                     case "main":
-                        return `${Apps.MAIN}/scripts/vctr-viewer.js`;
+                        return `${Apps.MAIN}/scripts/index.js`;
                     default:
                         return null;
                 }

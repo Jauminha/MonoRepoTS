@@ -5,6 +5,7 @@
     "main": "./src/main/scripts/index.ts",
     "dependencies": {},
     "devDependencies": {
+        "@purtuga/esm-webpack-plugin": "^1.2.1",
         "@types/copy-webpack-plugin": "^5.0.0",
         "@types/fs-extra": "^8.1.0",
         "@types/git-revision-webpack-plugin": "^3.0.0",
