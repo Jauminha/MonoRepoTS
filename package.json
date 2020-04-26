@@ -1,7 +1,7 @@
 {
-    "name": "webtemplatets",
+    "name": "monorepots",
     "version": "1.0.0",
-    "description": "Just a basic project setup to work with TS & a collection of tools",
+    "description": "Just a basic project setup to start a TS Monorepo & a collection of dev tools",
     "main": "./src/main/scripts/index.ts",
     "dependencies": {},
     "devDependencies": {
