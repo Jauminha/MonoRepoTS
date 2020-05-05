@@ -14,43 +14,6 @@ export class Theme {
 
         this.css = element(`
             <style>
-                .builder {
-                    display: flex;
-                    position: absolute;
-                    flex-direction: column;
-                    z-index: 2;
-                }
-
-                .category {
-                    display: flex;
-                    align-items: flex-start;
-                }
-
-                .variant {
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: center;
-                    padding: 2rem 0;
-                    min-width: 100px;
-                }
-                .variant .src,
-                .variant .svg {
-                    opacity: 0.3;
-                }
-                .variant.active .color:after,
-                .variant.active .src,
-                .variant.active .svg {
-                    opacity: 1;
-                }
-                .variant:hover:not(.active) .color:after {
-                    opacity: 0.1;
-                }
-                .variant:hover:not(.active) .src,
-                .variant:hover:not(.active) .svg {
-                    opacity: 0.5;
-                }
-
-
                 .button {
                     position: relative;
                 }

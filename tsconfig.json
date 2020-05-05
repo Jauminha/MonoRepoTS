@@ -6,7 +6,7 @@
         ],
         "module": "es2015",
         "target": "es2015",
-        // "moduleResolution": "node",
+        "moduleResolution": "node",
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "noImplicitThis": true,
@@ -27,9 +27,7 @@
         "node_modules/@types"
     ],
     "exclude": [
-        "demo",
-        "dist*",
-        "doc",
+        "dist",
         "node_modules",
         "temp",
         "tools",

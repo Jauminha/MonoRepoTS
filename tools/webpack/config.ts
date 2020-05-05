@@ -17,7 +17,7 @@ export const TEMP_PATH = path.join(BASE_PATH, "./temp/");
 
 export const baseConfig: BaseConfig = {
     mode: null,
-    port: 8002,
+    port: 8001,
     publicPath: "/",
     srcPath: SRC_PATH,
     distPath: DIST_PATH,
@@ -25,15 +25,13 @@ export const baseConfig: BaseConfig = {
 };
 
 export const webpackConfig = (cfg: BaseConfig): webpack.Configuration => {
+
     const { mode, publicPath, srcPath, distPath } = cfg;
 
     const instanceRule = (app: Apps, entryName: string) => {
         return {
             test: /.ts?$/,
-            include: [
-                path.join(srcPath, `./${app}/`),
-                path.join(srcPath, `./_common_/`),
-            ],
+            include: [path.join(srcPath, `./${app}/`), path.join(srcPath, `./_common_/`)],
             loader: "ts-loader",
             options: {
                 instance: entryName,

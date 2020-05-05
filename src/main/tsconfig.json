@@ -3,7 +3,7 @@
     "compilerOptions": {
         "rootDir": "./",
         "baseUrl": "./",
-        "outDir": "../../dist/viewer",
+        "outDir": "../../dist/main",
         "declaration": false,
         "incremental": true
     },
