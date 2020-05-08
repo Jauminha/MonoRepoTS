@@ -30,15 +30,24 @@ export const webpackConfig = (cfg: BaseConfig): webpack.Configuration => {
 
     const instanceRule = (app: Apps, entryName: string) => {
         return {
-            test: /.ts?$/,
+            test: /.ts(x?)$/,
             include: [path.join(srcPath, `./${app}/`), path.join(srcPath, `./_common_/`)],
-            loader: "ts-loader",
-            options: {
-                instance: entryName,
-                transpileOnly: true,
-                projectReferences: true,
-                reportFiles: ["*.ts"],
-            },
+            use: [
+                {
+                    loader: "babel-loader",
+                    options: { cacheDirectory: true },
+                },
+                {
+                    loader: "ts-loader",
+                    options: {
+                        instance: entryName,
+                        transpileOnly: true,
+                        projectReferences: true,
+                        reportFiles: ["*.{ts,tsx}"],
+                    },
+                }
+            ],
+
         };
     };
 
@@ -168,7 +177,7 @@ export const webpackConfig = (cfg: BaseConfig): webpack.Configuration => {
             }),
         ],
         resolve: {
-            extensions: [".ts", ".js"],
+            extensions: [".ts", ".tsx", ".js"],
         },
     };
 };

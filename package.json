@@ -5,6 +5,8 @@
     "main": "./src/main/scripts/index.ts",
     "dependencies": {},
     "devDependencies": {
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
         "@purtuga/esm-webpack-plugin": "^1.2.1",
         "@types/copy-webpack-plugin": "^5.0.0",
         "@types/fs-extra": "^8.1.0",
@@ -17,6 +19,7 @@
         "@typescript-eslint/eslint-plugin": "^2.29.0",
         "@typescript-eslint/parser": "^2.29.0",
         "axios": "^0.19.2",
+        "babel-loader": "^8.1.0",
         "copy-webpack-plugin": "^5.1.1",
         "cross-env": "^7.0.2",
         "eslint": "^6.8.0",
